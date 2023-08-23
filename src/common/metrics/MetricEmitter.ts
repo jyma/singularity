@@ -1,7 +1,6 @@
 import Metric from './Metric';
 import NoopMetricEmitter from './NoopMetricEmitter';
 import config from '../Config';
-import LambdaMetricEmitter from './LambdaMetricEmitter';
 
 export interface Emitter {
   emit(metric: Metric, timeOverride?: Date): Promise<void>;
